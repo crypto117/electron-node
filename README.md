@@ -1,4 +1,4 @@
-# TurtleCoin Electron Node
+# RhodiumCoin Electron Node
 
 ![](https://i.imgur.com/HUZZmM2.png)
 
