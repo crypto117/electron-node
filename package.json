@@ -1,7 +1,7 @@
 {
   "name": "electron-node",
   "version": "0.0.1",
-  "description": "An electron wrapper for the TurtleCoin daemon",
+  "description": "An electron wrapper for the RhodiumCoin daemon",
   "main": "index.js",
   "scripts": {
     "test": "standard",
@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/turtlecoin/electron-node.git"
+    "url": "git+https://github.com/rhodiumcoin/electron-node.git"
   },
   "bugs": {
-    "url": "https://github.com/turtlecoin/electron-node/issues"
+    "url": "https://github.com/rhodiumcoin/electron-node/issues"
   },
-  "homepage": "https://github.com/turtlecoin/electron-node#readme",
-  "author": "The TurtleCoin Developers",
+  "homepage": "https://github.com/rhodiumcoin/electron-node#readme",
+  "author": "The RhodiumCoin Developers",
   "license": "AGPL-3.0",
   "dependencies": {
     "download-file": "^0.1.5",
