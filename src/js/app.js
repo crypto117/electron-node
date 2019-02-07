@@ -51,13 +51,13 @@ $(document).ready(() => {
   })
 
   daemon.on('error', (error) => {
-    log(util.format('[ERROR] TurtleCoind error occurred: %s', error))
+    log(util.format('[ERROR] RhodiumCoind error occurred: %s', error))
   })
 
   daemon.on('exit', (exitcode) => {
     log('')
     log('')
-    log('TurtleCoind has exited')
+    log('RhodiumCoind has exited')
     setTimeout(() => {
       app.close()
     }, 30000)
@@ -67,7 +67,7 @@ $(document).ready(() => {
     log(data)
   })
 
-  log('Checking that we have the latest version of the TurtleCoin software...')
+  log('Checking that we have the latest version of the RhodiumCoin software...')
   helper.haveLatestVersion().then((latest) => {
     if (latest.exists) {
       log(util.format('Excellent, we have the latest version: %s', latest.version))
@@ -82,7 +82,7 @@ $(document).ready(() => {
   }).then(() => {
     log(util.format('Storing the blockchain data in: %s', dataDir))
   }).then(() => {
-    log('Starting TurtleCoind...')
+    log('Starting RhodiumCoind...')
   }).then(() => {
     daemon.start(execFile, startArgs, term.size().cols, term.size().rows)
   }).catch((error) => {
